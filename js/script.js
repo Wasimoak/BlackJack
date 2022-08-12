@@ -79,11 +79,11 @@ function dealerlogic() {
 
 function decideWinner() {
     let computerSum = 0
-  for(let i =0 ; i < computerCards.length;i++){
+    for(let i =0 ; i < computerCards.length;i++){
         computerSum += computerCards[i]
-      }
+    }
 
-  while(computerSum < 16){
+    while(computerSum < 16){
     dealerHit(computerCards)
     let newVal = computerSum1
     computerSum = newVal
@@ -91,17 +91,17 @@ function decideWinner() {
     for(let i =0 ; i <= computerCards.length;i++){
          computerSum1 += computerCards[i]
       }
-  }
+    }
 
     let playerSumTotal = 0
     for(let i =0 ; i < playerCards.length;i++){
         playerSumTotal += playerCards[i]
-      }
+    }
 
       let computerSumTotal = 0
     for(let i =0 ; i < computerCards.length;i++){
         computerSumTotal += computerCards[i]
-      }
+    }
 
     if(playerSumTotal > 21){
         message = 'You went over, Computer Wins'
