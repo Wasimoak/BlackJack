@@ -8,4 +8,3 @@ Getting Started: https://wasimoak.github.io/BlackJack/
 
 Next Steps: Planned future enhancements (icebox items).
 1) placing bet amounts
-2) being able to play against multiple AI
