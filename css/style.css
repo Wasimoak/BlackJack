@@ -1,0 +1,39 @@
+div {
+    border: 3px solid black;
+}
+
+#game-board {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+#game-board > div {
+    width: 50%;
+}
+
+#game-board > p {
+    margin-top: auto;
+}
+
+
+#deal {
+    margin-top: 25px;
+    width: 32vw;
+}
+#hit {
+    margin-top: 25px;
+    width: 32vw;
+}
+#stand {
+    margin-top: 25px;
+    width: 32vw;
+}
+
+#message {
+    border: 2 px solid Black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;   
+}
