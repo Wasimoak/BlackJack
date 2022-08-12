@@ -66,16 +66,12 @@ function dealerHit(arr) {
     render()
  }
 function stand() {
-    dealerlogic()
     decideWinner()
     render()
 }
 function restart() {
     init()
 }
-function dealerlogic() {
-    render()
-    }
 
 function decideWinner() {
     let computerSum = 0
