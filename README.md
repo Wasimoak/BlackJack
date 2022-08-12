@@ -1,6 +1,6 @@
 BlackJack browser based Game
 
-<img src="https://imgur.com/a/wP6Eud7">
+<img src="https://i.imgur.com/tlVDvQi.png" width= "600" height="300">
 
 Technologies Used: JavaScript, HTML, CSS
 
