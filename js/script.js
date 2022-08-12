@@ -104,10 +104,12 @@ function decideWinner() {
       }
 
     if(playerSumTotal > 21){
-    message = 'You went over, Computer Wins'
+        message = 'You went over, Computer Wins'
     }else if( playerSumTotal <= 21 && playerSumTotal <computerSumTotal && computerSumTotal <= 21){
-          message ='You Loose'
-    }else if(playerSumTotal <= 21 && playerSumTotal > computerSumTotal && computerSumTotal <= 21){
-    message ='You Win'
+        message ='You Loose'
+    }else if(playerSumTotal <= 21 && playerSumTotal > computerSumTotal){
+        message ='You Win'
+    }else if(playerSumTotal === computerSumTotal) {
+        message = 'Tie'
     }
   }
