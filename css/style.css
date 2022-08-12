@@ -17,23 +17,34 @@ div {
     margin-top: auto;
 }
 
-
 #deal {
     margin-top: 25px;
     width: 32vw;
+    height: 8vh;
+    background-color: cadetblue;
 }
+
 #hit {
-    margin-top: 25px;
+    margin-top: 10px;
     width: 32vw;
+    height: 8vh;
+    background-color: lightgreen;
 }
+
 #stand {
     margin-top: 25px;
     width: 32vw;
+    height: 8vh;
+    background-color: firebrick;
+}
+
+#restart {
+    margin-top: 10px;
 }
 
 #message {
-    border: 2 px solid Black;
     height: 10vh;
+    font-size: 40px;
     display: flex;
     justify-content: space-around;   
 }
