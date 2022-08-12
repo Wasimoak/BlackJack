@@ -1,15 +1,15 @@
 let playerCards=[];
 let computerCards=[];
-let PlayerWins;
-let computerWins;
 let message;
-let sumCards;
 let playerSumCard;
 let computerSumCard;
 
 /* -----Cached Element Refernces ------*/
+
 const playerCardsEl =document.querySelector('#player > h1')
 const computerCardsEl =document.querySelector('#computer > h1')
+const playerSumCardEl = document.querySelector('#player-card-2')
+const computerSumCardEl = document.querySelector('#cpu-card-2')
 const dealBtn = document.getElementById('deal')
 const hitBtn = document.getElementById('hit')
 const standBtn = document.getElementById('stand')
@@ -21,9 +21,10 @@ dealBtn.addEventListener('click', deal)
 hitBtn.addEventListener('click', function(){hit(playerCards)})
 standBtn.addEventListener('click', stand)
 restartBtn.addEventListener('click', restart)
-/* -----functions ------*/
-init()
 
+/* -----functions ------*/
+
+init()
 function init() {
 playerCards = []
 computerCards = []
@@ -32,7 +33,6 @@ computerSumCard = 0
 message = "Deal the Cards"
 render()
 }
-
 function render () {
 playerCardsEl.textContent = playerCards.join(' ')
 playerSumCardEl.textContent = calculateHandValue(playerCards)
@@ -42,16 +42,14 @@ let psum = calculateHandValue(playerCards)
 let cpsum = calculateHandValue(computerCards)
 messageEl.textContent = message
 }
-
 function getRandomCard() {
     return Math.floor(Math.random() * 11 + 1)
 }
-
 function calculateHandValue(arr) {
+    console.log(arr, "arr chack")
     let total = 0
     playerSumCard = total
 }
-
 function deal() {
     playerCards = [getRandomCard(), getRandomCard()]
     computerCards = [getRandomCard(), getRandomCard()]
@@ -78,6 +76,7 @@ function restart() {
 function dealerlogic() {
     render()
     }
+
 function decideWinner() {
     let computerSum = 0
   for(let i =0 ; i < computerCards.length;i++){
@@ -88,7 +87,7 @@ function decideWinner() {
     dealerHit(computerCards)
     let newVal = computerSum1
     computerSum = newVal
-
+    console.log('newval computer summmmmmm',newVal)
     for(let i =0 ; i <= computerCards.length;i++){
          computerSum1 += computerCards[i]
       }
@@ -104,13 +103,11 @@ function decideWinner() {
         computerSumTotal += computerCards[i]
       }
 
-  if(playerSumTotal > 21){
+    if(playerSumTotal > 21){
     message = 'You went over, Computer Wins'
-
-  }else if( playerSumTotal <= 21 && playerSumTotal <computerSumTotal && computerSumTotal <= 21){
+    }else if( playerSumTotal <= 21 && playerSumTotal <computerSumTotal && computerSumTotal <= 21){
           message ='You Loose'
-
-  }else if(playerSumTotal <= 21 && playerSumTotal > computerSumTotal && computerSumTotal <= 21){
+    }else if(playerSumTotal <= 21 && playerSumTotal > computerSumTotal && computerSumTotal <= 21){
     message ='You Win'
-  }
+    }
   }
