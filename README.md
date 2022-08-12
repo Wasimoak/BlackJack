@@ -4,7 +4,7 @@ BlackJack browser based Game
 
 Technologies Used: JavaScript, HTML, CSS
 
-Getting Started: file:///Users/wasimokadia/Desktop/sei-Projects/sei-53-projects/blackjack/index.html
+Getting Started: https://wasimoak.github.io/BlackJack/
 
 Next Steps: Planned future enhancements (icebox items).
 1) placing bet amounts
